@@ -17,7 +17,7 @@ import (
 	"golang.org/x/net/webdav"
 )
 
-var revision = "develop"
+var version = "develop"
 
 var dir = flag.String("d", path.Join("."), "WebDav server directory.")
 var port = flag.Int("p", 80, "WebDav server port.")
@@ -101,7 +101,7 @@ func serve(ctx context.Context, dir string, port int) {
 func main() {
 	log.SetPrefix("wds: ")
 	log.SetFlags(0)
-	log.Printf("revision: %s\n", revision)
+	log.Printf("version: %s\n", version)
 
 	checkFlags()
 
