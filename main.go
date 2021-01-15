@@ -84,6 +84,7 @@ func serve(ctx context.Context, dir string, port int) {
 	}()
 
 	log.Printf("server start on %s:%d", localIP(), port)
+	log.Printf("press `Ctrl+C` to terminate")
 
 	for {
 		select {
